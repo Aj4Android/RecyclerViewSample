@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initImageBitmaps(){
-        Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
+        if (testVariable==0) {
+            Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
+        }
 
         mImageUrls.add("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg");
         mNames.add("Havasu Falls");
