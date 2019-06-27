@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    int testVariable=0;
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d(TAG, "onCreate: started.");
+        Log.d(TAG, "onCreate: started."+testVariable);
 
         initImageBitmaps();
     }
